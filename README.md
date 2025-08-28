@@ -3,6 +3,7 @@
 ## REQUIREMENTS
 
 **Stable Internet Connection**
+
 **2 Drives**. *One 8GB minimum. Second 200GB minimum*
 
 ## PURPOSE
