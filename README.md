@@ -337,3 +337,10 @@ use it at your own risk.
 Another short rant... Forcibly removing conflicting packages is not a crime unless the packages in question are
 **dbus** or **systemd**...
 
+
+
+# OTHER RESOURCES
+https://github.com/juanbelin/How-to-install-BlackArch-in-USB-with-persistance
+
+
+
