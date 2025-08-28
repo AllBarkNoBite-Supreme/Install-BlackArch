@@ -1,21 +1,20 @@
-#INSTALLING BLACKARCH USING THE SLIM OS ISO FILE
+# INSTALLING BLACKARCH USING THE SLIM OS ISO FILE
 
-##REQUIREMENTS
+## REQUIREMENTS
 
 **Stable Internet Connection**
 **2 Drives**. *One 8GB minimum. Second 200GB minimum*
 
-##PURPOSE
+## PURPOSE
 
 During my install I found that there was very little support; *atleast in text form*, for anyone wanting to switch
 to blackarch linux. Troubleshooting the problems with the install itself can be somewhat of a nightmare if you
 are not methodological about how you approach the solve. I've documented the steps that I followed (*atleast the 
 steps that will lead to a meaningful outcome*) to obtain a fully functional blackarch driven system. 
 
-##CREATING A BOOTABLE DRIVE
+## CREATING A BOOTABLE DRIVE
 
-You must have the blackarch SLIM ISO downloaded, if not, you can get it from this [direct download link]
-(https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-slim-2023.05.01-x86_64.iso)
+You must have the blackarch SLIM ISO downloaded, if not, you can get it from this [direct download link](https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-slim-2023.05.01-x86_64.iso)
 
 To create a bootable drive, you can use **a)** *dd in the linux shell* or **b)** *balena etcher: a GUI available on all 
 major platforms.*
@@ -25,13 +24,13 @@ To flash the ISO to your USB stick run this command (using dd):
 suffixes your desired drive, and bs(buffer size) is set to 16MB instead of the *ridiculous* 512B. Wait for the 
 program to finish and eject your drive.
 
-The usage of [balena etcher] is very straight forward, it will automatically detect available drives and also prompt you
-for the location of you ISO image. (https://etcher.balena.io/#download-etcher)
+The usage of [balena etcher](https://etcher.balena.io/#download-etcher) is very straight forward, it will automatically detect available drives and also prompt you
+for the location of you ISO image. 
 
 **RUFUS** may also be used, but do so in dd mode and also note *it is considerably slower than balena etcher for 
 this particular ISO.* I do not understand why.
 
-##BOOTING INTO THE USB
+## BOOTING INTO THE USB
 
 You will need to get into your **boot manager** and manually select the Installer USB, especially if your system
 is not preconfigured to boot from *external storage media*. Your default login credentials are;
@@ -49,7 +48,7 @@ to this [Debian Calameres install tutorial](https://c-nergy.be/blog/?p=19377)
 Once the installation has completed, shutdown the machine, remove the Installer USB and *boot onto the drive you just 
 installed blackarch onto.* We are not done yet.
 
-##CONFIGURING THE OS
+## CONFIGURING THE OS
 
 Do *not* connect your device to the internet just yet.
 
@@ -85,14 +84,13 @@ Another package that will cause installation conflicts is the **python-typing_ex
 rid of this is *rather difficult* so we will allow pacman to do it for us.
 Run the command `sudo pacman -Syy` to refresh pacman.
 
-#UPDATING DATABASES AND MIRRORS
+# UPDATING DATABASES AND MIRRORS
 
 This is **arguably the most important** step of this entire configuration process. 
 
 You can finally connect your device to the internet!
 
-First we will configure the *blackarch-mirrorlist*, which you can download from this [direct download link]
-(https://www.blackarch.org/blackarch-mirrorlist)
+First we will configure the *blackarch-mirrorlist*, which you can download from this [direct download link](https://www.blackarch.org/blackarch-mirrorlist)
 
 Once it is downloaded, open it using *Mousepad* and **copy** all its contents. 
 You will now need to open the *blackarch-mirrorlist* located at **/etc/pacman.d/blackarch-mirrorlist**
@@ -116,7 +114,7 @@ step.** To do this run the following command `sudo pacman -S archlinux-keyring`.
 the blackarch keyring and even go as far as manually trusting the keys, however this will not be necessary,
 atleast in my humble opinion. Run the command `sudo pacman -Syy` to refresh pacman.
 
-##DEPENDENCY HELL
+## DEPENDENCY HELL
 
 This is the part where things get very *interesting, frustrating and annoying*. **I want you to remember that
 we have already updated the keyring.** So it will be a *tedious and wasteful* activity to **refresh or repopulate**
@@ -142,19 +140,19 @@ issues manually. A process that is **nightmarish** *and will sink several hours 
 are used*. **I speak from experience.**
 
 Moving away from my rant, the above command **should work in theory** and fully upgrade the system.However, if this guide
-does not help you in resolving your install issues, please visit the official [blackarch reddit community] and post
-your issue there(https://www.reddit.com/r/BlackArchOfficial/) and also take [arch wiki] into consideration
-(https://wiki.archlinux.org/title/Main_page)
+does not help you in resolving your install issues, please visit the official [blackarch reddit community](https://www.reddit.com/r/BlackArchOfficial/) and post
+your issue there and also take [arch wiki](https://wiki.archlinux.org/title/Main_page) into consideration
+
 **Whenever** pacman asks you to remove a conflicting package, your answer should always be **yes**. *Or else it will terminate
 the update.*
 
 **Wishing you the best, fastest install know to man. Not all must suffer. Hehe.**
 
 
-#FINISHING THOUGHTS
+#F INISHING THOUGHTS
 
 If you wish to **install the full blackarch toolkit** consider running this command `sudo pacman -S blackarch`
-or you can refer to the [pdf guide] to see how to install groups. P.s **blackman has not been maintained in a long time**
-use it at your own risk(https://blackarch.org/blackarch-guide-en.pdf)
+or you can refer to the [pdf guide](https://blackarch.org/blackarch-guide-en.pdf) to see how to install groups. P.s **blackman has not been maintained in a long time**
+use it at your own risk.
 Another short rant... Forcibly removing conflicting packages is not a crime unless the packages in question are
 **dbus** or **systemd**...
