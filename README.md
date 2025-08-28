@@ -108,7 +108,7 @@ Do this using this command `sudo nano /etc/pacman.d/blackarch-mirrorlist`
 To **delete all the mirrors** in the file press these keys `ALT + \` and `ALT + T`
 Then **paste** the new data using `CTRL + SHIFT +V`. Make sure to *uncomment one server that is closest 
 to your region*. **This is important.**
-Press `CTRL + X` and make sure to **save the file** before exiting. You many also copy the blackarch mirrorlist I've appended to the bottom of this paragraph, but do well to keep it uptodate.
+Press `CTRL + X` and make sure to **save the file** before exiting. You may also copy the blackarch mirrorlist I've appended to the bottom of this paragraph, but do well to keep it up-to-date.
 
 
 
