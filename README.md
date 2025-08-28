@@ -1,4 +1,7 @@
-# INSTALLING BLACKARCH USING THE SLIM OS ISO FILE
+# HOW TO INSTALL BLACKARCH
+
+### INSTALLING BLACKARCH USING THE SLIM OS ISO FILE
+
 
 ## REQUIREMENTS
 
@@ -8,12 +11,14 @@
 
 ## PURPOSE
 
+
 During my install I found that there was very little support; *atleast in text form*, for anyone wanting to switch
 to blackarch linux. Troubleshooting the problems with the install itself can be somewhat of a nightmare if you
 are not methodological about how you approach the solve. I've documented the steps that I followed (*atleast the 
 steps that will lead to a meaningful outcome*) to obtain a fully functional blackarch driven system. 
 
 ## CREATING A BOOTABLE DRIVE
+
 
 You must have the blackarch SLIM ISO downloaded, if not, you can get it from this [direct download link](https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-slim-2023.05.01-x86_64.iso)
 
@@ -33,6 +38,7 @@ this particular ISO.* I do not understand why.
 
 ## BOOTING INTO THE USB
 
+
 You will need to get into your **boot manager** and manually select the Installer USB, especially if your system
 is not preconfigured to boot from *external storage media*. Your default login credentials are;
 *Login:* **liveuser**
@@ -50,6 +56,7 @@ Once the installation has completed, shutdown the machine, remove the Installer 
 installed blackarch onto.* We are not done yet.
 
 ## CONFIGURING THE OS
+
 
 Do *not* connect your device to the internet just yet.
 
@@ -87,6 +94,7 @@ Run the command `sudo pacman -Syy` to refresh pacman.
 
 # UPDATING DATABASES AND MIRRORS
 
+
 This is **arguably the most important** step of this entire configuration process. 
 
 You can finally connect your device to the internet!
@@ -116,6 +124,7 @@ the blackarch keyring and even go as far as manually trusting the keys, however 
 atleast in my humble opinion. Run the command `sudo pacman -Syy` to refresh pacman.
 
 ## DEPENDENCY HELL
+
 
 This is the part where things get very *interesting, frustrating and annoying*. **I want you to remember that
 we have already updated the keyring.** So it will be a *tedious and wasteful* activity to **refresh or repopulate**
@@ -151,6 +160,7 @@ the update.*
 
 
 # FINISHING THOUGHTS
+
 
 If you wish to **install the full blackarch toolkit** consider running this command `sudo pacman -S blackarch`
 or you can refer to the [pdf guide](https://blackarch.org/blackarch-guide-en.pdf) to see how to install groups. P.s **blackman has not been maintained in a long time**
