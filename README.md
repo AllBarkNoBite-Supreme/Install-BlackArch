@@ -108,7 +108,7 @@ Do this using this command `sudo nano /etc/pacman.d/blackarch-mirrorlist`
 To **delete all the mirrors** in the file press these keys `ALT + \` and `ALT + T`
 Then **paste** the new data using `CTRL + SHIFT +V`. Make sure to *uncomment one server that is closest 
 to your region*. **This is important.**
-Press `CTRL + X` and make sure to **save the file** before exiting. 
+Press `CTRL + X` and make sure to **save the file** before exiting. You many also copy the blackarch mirrorlist I've appended to the bottom of this README.
 
 Now we update the *pacman mirrorlist*. To do do this you must find the best mirrors for your region.
 You can do that by using the [archlinux mirror generator](https://archlinux.org/mirrorlist/)
@@ -168,3 +168,172 @@ or you can refer to the [pdf guide](https://blackarch.org/blackarch-guide-en.pdf
 use it at your own risk.
 Another short rant... Forcibly removing conflicting packages is not a crime unless the packages in question are
 **dbus** or **systemd**...
+
+
+
+
+
+
+
+
+```
+# Australia
+#Server = http://au.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://au.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://blackarch.mirror.digitalpacific.com.au/$repo/os/$arch
+
+# Austria
+#Server = http://mirror.easyname.at/blackarch/$repo/os/$arch
+#Server = ftp://mirror.easyname.at/blackarch/$repo/os/$arch
+
+# Canada
+#Server = http://ca.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://ca.mirrors.cicku.me/blackarch/$repo/os/$arch
+
+# China
+#Server = https://mirrors.hust.edu.cn/blackarch/$repo/os/$arch
+#Server = https://mirror.sjtu.edu.cn/blackarch/$repo/os/$arch
+#Server = https://mirrors.nju.edu.cn/blackarch/$repo/os/$arch
+#Server = http://mirrors.nju.edu.cn/blackarch/$repo/os/$arch
+#Server = https://mirrors.tuna.tsinghua.edu.cn/blackarch/$repo/os/$arch
+#Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+#Server = http://mirrors.aliyun.com/blackarch/$repo/os/$arch
+#Server = https://mirrors.aliyun.com/blackarch/$repo/os/$arch
+
+# Denmark
+#Server = https://mirrors.dotsrc.org/blackarch/$repo/os/$arch
+#Server = http://mirrors.dotsrc.org/blackarch/$repo/os/$arch
+#Server = ftp://mirrors.dotsrc.org/blackarch/$repo/os/$arch
+
+# Ecuador
+#Server = http://mirror.cedia.org.ec/blackarch/$repo/os/$arch
+#Server = https://mirror.cedia.org.ec/blackarch/$repo/os/$arch
+
+# France
+#Server = http://blackarch.leneveu.fr/blackarch/$repo/os/$arch
+#Server = http://mirror.cyberbits.eu/blackarch/$repo/os/$arch
+#Server = https://mirror.cyberbits.eu/blackarch/$repo/os/$arch
+
+# Germany
+#Server = https://www.blackarch.org/blackarch/$repo/os/$arch
+#Server = http://www.blackarch.org/blackarch/$repo/os/$arch
+#Server = http://de.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://de.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+#Server = ftp://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+#Server = http://blackarch.unixpeople.org/$repo/os/$arch
+#Server = https://blackarch.unixpeople.org/$repo/os/$arch
+
+# Greece
+#Server = http://ftp.cc.uoc.gr/mirrors/linux/blackarch/$repo/os/$arch
+#Server = ftp://ftp.cc.uoc.gr/mirrors/linux/blackarch/$repo/os/$arch
+
+# Great Britain
+#Server = http://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
+#Server = https://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
+#Server = http://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+#Server = https://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+
+# India
+#Server = http://in.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://in.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://mirror.maa.albony.in/blackarch/$repo/os/$arch
+
+# Iran
+#Server = http://mirror.blackrepo.com/$repo/os/$arch
+
+# Italy
+#Server = http://blackarch.mirror.garr.it/mirrors/blackarch/$repo/os/$arch
+
+# Japan
+#Server = http://www.miraa.jp/blackarch/$repo/$os/$arch
+#Server = https://www.miraa.jp/blackarch/$repo/$os/$arch
+#Server = http://jp.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://jp.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://www.ftp.ne.jp/Linux/packages/blackarch/$repo/os/$arch
+#Server = https://www.ftp.ne.jp/Linux/packages/blackarch/$repo/os/$arch
+#Server = http://ftp.kddilabs.jp/Linux/packages/blackarch/$repo/os/$arch
+#Server = http://www.miraa.jp/blackarch/$repo/os/$arch
+#Server = https://www.miraa.jp/blackarch/$repo/os/$arch
+#Server = https://ftp.kddilabs.jp/Linux/packages/blackarch/$repo/os/$arch
+
+# Korea
+#Server = https://deny.krfoss.org/blackarch/$repo/os/$arch
+#Server = http://kr.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://kr.mirrors.cicku.me/blackarch/$repo/os/$arch
+
+# Netherlands
+#Server = http://mirror.serverion.com/blackarch/$repo/os/$arch
+#Server = https://mirror.serverion.com/blackarch/$repo/os/$arch
+
+# Poland
+#Server = http://ftp.icm.edu.pl/pub/Linux/dist/blackarch/$repo/os/$arch
+#Server = https://ftp.icm.edu.pl/pub/Linux/dist/blackarch/$repo/os/$arch
+#Server = ftp://ftp.icm.edu.pl/pub/Linux/dist/blackarch/$repo/os/$arch
+#Server = gopher://ftp.icm.edu.pl/1/pub/Linux/dist/blackarch/$repo/os/$arch
+
+# Portugal
+#Server = http://eu.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://eu.mirrors.cicku.me/blackarch/$repo/os/$arch
+
+# Romania
+#Server = http://mirrors.hostico.ro/blackarch/$repo/os/$arch
+#Server = https://mirrors.hostico.ro/blackarch/$repo/os/$arch
+
+# Russia
+#Server = http://repository.su/blackarch/$repo/os/$arch
+#Server = https://repository.su/blackarch/$repo/os/$arch
+#Server = http://mirror.yandex.ru/mirrors/blackarch/$repo/os/$arch
+#Server = ftp://mirror.yandex.ru/mirrors/blackarch/$repo/os/$arch
+
+# Singapore
+#Server = http://sg.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://sg.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://download.nus.edu.sg/mirror/blackarch/$repo/os/$arch
+#Server = https://download.nus.edu.sg/mirror/blackarch/$repo/os/$arch
+
+# Sweden
+#Server = http://mirror.zetup.net/blackarch/$repo/os/$arch
+#Server = https://mirror.zetup.net/blackarch/$repo/os/$arch
+
+# Switzerland
+#Server = http://mirror.easyname.ch/blackarch/$repo/os/$arch
+#Server = ftp://mirror.easyname.ch/blackarch/$repo/os/$arch
+#Server = https://mirror.tillo.ch/ftp/blackarch/$repo/os/$arch
+#Server = http://mirror.tillo.ch/ftp/blackarch/$repo/os/$arch
+#Server = ftpes://mirror.tillo.ch/blackarch/$repo/os/$arch
+#Server = ftp://mirror.tillo.ch/blackarch/$repo/os/$arch
+
+# Turkey
+#Server = http://ftp.linux.org.tr/blackarch/$repo/os/$arch
+#Server = https://ftp.linux.org.tr/blackarch/$repo/os/$arch
+#Server = ftp://ftp.linux.org.tr/blackarch/$repo/os/$arch
+
+# Taiwan
+#Server = http://blackarch.cs.nycu.edu.tw/$repo/os/$arch
+#Server = https://blackarch.cs.nycu.edu.tw/$repo/os/$arch
+#Server = http://mirror.archlinux.tw/BlackArch/$repo/os/$arch
+#Server = https://mirror.archlinux.tw/BlackArch/$repo/os/$arch
+
+# UK
+#Server = http://mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+#Server = https://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+
+# US
+#Server = http://us.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = https://us.mirrors.cicku.me/blackarch/$repo/os/$arch
+#Server = http://mirror.math.princeton.edu/pub/blackarch/$repo/os/$arch
+#Server = http://distro.ibiblio.org/blackarch/$repo/os/$arch
+#Server = ftp://distro.ibiblio.org/blackarch/$repo/os/$arch
+#Server = https://mirror.team-cymru.com/blackarch/$repo/os/$arch
+#Server = ftp://mirror.team-cymru.com/blackarch/$repo/os/$arch
+#Server = https://mirrors.ocf.berkeley.edu/blackarch/$repo/os/$arch
+#Server = http://mirrors.ocf.berkeley.edu/blackarch/$repo/os/$arch
+#Server = https://ftp2.osuosl.org/pub/blackarch/$repo/os/$arch
+#Server = http://ftp2.osuosl.org/pub/blackarch/$repo/os/$arch
+
+```
+
