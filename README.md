@@ -72,13 +72,11 @@ Firstly we must make sure that the *community* is commented out in the *pacman.c
 updating the system. To do this we run `sudo nano /etc/pacman.conf` which will open the configuration file.
 Make sure the *community* header is commented out as follows
 
-Code Example:
 ```
 #[community]
 #Include = /etc/pacman.d/mirrorlist
 ```
-Picture Example:
-!(HowToDoWhaaa/CommunityDB.png)
+
 
 *The hashtag makes it a comment.
 Press `CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
