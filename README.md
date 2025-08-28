@@ -6,7 +6,7 @@
 
 ## REQUIREMENTS
 
-**Stable Internet Connection**
+**Stable** *Internet Connection*
 
 **2 Drives**. *One 8GB minimum. Second 200GB minimum*
 
@@ -61,7 +61,7 @@ installed blackarch onto.* We are not done yet.
 
 Do *not* connect your device to the internet just yet.
 
-Use the *credentials* you entered into the calameres installer to login into your blackarch OS.
+Use the *credentials* you entered into the calamares installer to login into your blackarch OS.
 Once you have logged in successfully, open the **terminal**. 
 *Everything looks perfectly fine!* **Why bother!?**
 I hate to be that guy, but unfortunately **this system is severely broken**. This guide will assist you in 
@@ -80,8 +80,8 @@ Make sure the *community* header is commented out as follows
 *The hashtag makes it a comment.
 Press `CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
 
-The next thing we have to do is set the system time. We can do this by running the timedatectl command.
-Enter the appropriate time in this format: sudo `timedatectl set-time "2025-12-25 12:12:20"`. This is *important*
+The next thing we have to do is set the system time. We can do this by running the `timedatectl` command.
+Enter the appropriate time in this format: `sudo timedatectl set-time "2025-12-25 12:12:20"`. This is *important*
 because it ensures packages can be downloaded correctly.
 
 Now we are **removing packages that will cause update errors**; **calamares** and **jdk-openjdk.**
