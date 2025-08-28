@@ -78,7 +78,7 @@ Code Example:
 #Include = /etc/pacman.d/mirrorlist
 ```
 Picture Example:
-!(https://github.com/AllBarkNoBite-Supreme/HowToDoWhaaa/blob/main/CommunityDB.png?raw=true)
+!(CommunityDB.png)
 
 *The hashtag makes it a comment.
 Press `CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
