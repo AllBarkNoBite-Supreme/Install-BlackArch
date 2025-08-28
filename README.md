@@ -49,9 +49,9 @@ At this stage I strongly advise **against** connecting the device to the interne
 to update itself, which will further complicate the installation process. Therefore we will not be updating
 packages just yet.
 
-Press the installer icon and follow the prompts. The software used here is **calameres**, which is widely used
+Press the installer icon and follow the prompts. The software used here is **calamares**, which is widely used
 to install various distributions of linux such as *Debian*. If you are struggling with the partitioning please refer
-to this [Debian Calameres install tutorial](https://c-nergy.be/blog/?p=19377) 
+to this [Debian Calamares install tutorial](https://c-nergy.be/blog/?p=19377) 
 
 Once the installation has completed, shutdown the machine, remove the Installer USB and *boot onto the drive you just 
 installed blackarch onto.* We are not done yet.
@@ -84,7 +84,7 @@ The next thing we have to do is set the system time. We can do this by running t
 Enter the appropriate time in this format: sudo `timedatectl set-time "2025-12-25 12:12:20"`. This is *important*
 because it ensures packages can be downloaded correctly.
 
-Now we are **removing packages that will cause update errors**; **calameres** and **jdk-openjdk.**
+Now we are **removing packages that will cause update errors**; **calamares** and **jdk-openjdk.**
 To do this run the commands: 
 `sudo pacman -Rns calameres`
 `sudo pacman -Rns jdk-openjdk`
