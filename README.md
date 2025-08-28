@@ -149,7 +149,7 @@ the update.*
 **Wishing you the best, fastest install know to man. Not all must suffer. Hehe.**
 
 
-#F INISHING THOUGHTS
+# FINISHING THOUGHTS
 
 If you wish to **install the full blackarch toolkit** consider running this command `sudo pacman -S blackarch`
 or you can refer to the [pdf guide](https://blackarch.org/blackarch-guide-en.pdf) to see how to install groups. P.s **blackman has not been maintained in a long time**
