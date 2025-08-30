@@ -87,7 +87,7 @@ because it ensures packages can be downloaded correctly.
 
 Now we are **removing packages that will cause update errors**; **calamares** and **jdk-openjdk.**
 To do this run the commands: 
-`sudo pacman -Rns calameres`
+`sudo pacman -Rns calamares`
 `sudo pacman -Rns jdk-openjdk`
 
 Another package that will cause installation conflicts is the **python-typing_extensions**, package however getting
