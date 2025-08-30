@@ -313,7 +313,7 @@ will begin automatically.** Allow it to go through **patiently, you will see a f
 **REBOOT THE MACHINE ONCE THE INSTALLATION FINISHES.**
 
 The reason why I am convinced the mirrors are culprit is because of the nature of the command I used to fully upgrade 
-the system `sudo pacman -Syu --ignore python-typing_extensions --overwrite '*'`
+the system `sudo pacman -Syu --ignore python-typing_extensions --overwrite '*'`.
 `--overwrite '*'` will forcibly resolve any install issues. This ensures that you don't have to deal with dependency
 issues manually. A process that is **nightmarish** *and will sink several hours or days to resolve if other "methods"
 are used*. **I speak from experience.**
