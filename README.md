@@ -59,7 +59,16 @@ to update itself, which will further complicate the installation process. Theref
 packages just yet.
 
 Press the installer icon and follow the prompts. The software used here is **calamares**, which is widely used
-to install various distributions of linux such as *Debian*. If you are struggling with the partitioning please refer
+to install various distributions of linux such as *Debian*. If you72058-1 is up to date -- reinstalling
+warning: jeb-arm-5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-intel-1:3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jeb-mips-1:5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-webasm-3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jefferson-v0.4.6.r0.g9e33796-1 is up to date -- reinstalling
+warning: jsparser-31.ccd3ab6-5 is up to date -- reinstalling
+warning: justdecompile-22018-2 is up to date -- reinstalling
+warning: jwscan-7.874b3a5-2 is up to date -- reinstalling
+warning: klee-2.1-2 is up to date are struggling with the partitioning please refer
 to this [Debian Calamares install tutorial](https://c-nergy.be/blog/?p=19377) 
 
 Once the installation has completed, shutdown the machine, remove the Installer USB and *boot onto the drive you just 
@@ -105,7 +114,16 @@ Run the command `sudo pacman -Syy` to refresh pacman.
 
 # UPDATING DATABASES AND MIRRORS
 
-
+72058-1 is up to date -- reinstalling
+warning: jeb-arm-5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-intel-1:3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jeb-mips-1:5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-webasm-3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jefferson-v0.4.6.r0.g9e33796-1 is up to date -- reinstalling
+warning: jsparser-31.ccd3ab6-5 is up to date -- reinstalling
+warning: justdecompile-22018-2 is up to date -- reinstalling
+warning: jwscan-7.874b3a5-2 is up to date -- reinstalling
+warning: klee-2.1-2 is up to date
 This is **arguably the most important** step of this entire configuration process. 
 
 You can finally connect your device to the internet!
@@ -131,7 +149,16 @@ Press `CTRL + X` and make sure to **save the file** before exiting. You may also
 #Server = https://au.mirrors.cicku.me/blackarch/$repo/os/$arch
 #Server = http://blackarch.mirror.digitalpacific.com.au/$repo/os/$arch
 
-# Austria
+# Austria72058-1 is up to date -- reinstalling
+warning: jeb-arm-5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-intel-1:3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jeb-mips-1:5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-webasm-3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jefferson-v0.4.6.r0.g9e33796-1 is up to date -- reinstalling
+warning: jsparser-31.ccd3ab6-5 is up to date -- reinstalling
+warning: justdecompile-22018-2 is up to date -- reinstalling
+warning: jwscan-7.874b3a5-2 is up to date -- reinstalling
+warning: klee-2.1-2 is up to date
 #Server = http://mirror.easyname.at/blackarch/$repo/os/$arch
 #Server = ftp://mirror.easyname.at/blackarch/$repo/os/$arch
 
@@ -355,8 +382,8 @@ https://github.com/juanbelin/How-to-install-BlackArch-in-USB-with-persistance
 INSTALLATION PROBLEMS
 I suggest that you ignore these packages when installing the blackarch-reversing group. I could not find any mirrors to download these from.
 
-1.radare2-keystone
-2.radare2-unicorn
+1.)radare2-keystone
+2.)radare2-unicorn
 
 
 
