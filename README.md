@@ -343,10 +343,12 @@ Another short rant... Forcibly removing conflicting packages is not a crime unle
 https://github.com/juanbelin/How-to-install-BlackArch-in-USB-with-persistance
 
 
-### INSTALLATION PROBLEMS
+INSTALLATION PROBLEMS
+I suggest that you ignore these packages when installing the blackarch-reversing group. I could not find any mirrors to download these from.
+
 1.radare2-keystone
 
-2.radare-unicorn
+2.radare2-unicorn
 
 
 
