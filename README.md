@@ -15,7 +15,16 @@
 
 During my install I found that there was very little support; *atleast in text form*, for anyone wanting to switch
 to blackarch linux. Troubleshooting the problems with the install itself can be somewhat of a nightmare if you
-are not methodological about how you approach the solve. I've documented the steps that I followed (*atleast the 
+are not methodological about how you approach the so72058-1 is up to date -- reinstalling
+warning: jeb-arm-5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-intel-1:3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jeb-mips-1:5.20.0.202411121942-1 is up to date -- reinstalling
+warning: jeb-webasm-3.7.0.201909272058-1 is up to date -- reinstalling
+warning: jefferson-v0.4.6.r0.g9e33796-1 is up to date -- reinstalling
+warning: jsparser-31.ccd3ab6-5 is up to date -- reinstalling
+warning: justdecompile-22018-2 is up to date -- reinstalling
+warning: jwscan-7.874b3a5-2 is up to date -- reinstalling
+warning: klee-2.1-2 is up to datelve. I've documented the steps that I followed (*atleast the 
 steps that will lead to a meaningful outcome*) to obtain a fully functional blackarch driven system. 
 
 ## CREATING A BOOTABLE DRIVE
@@ -347,7 +356,6 @@ INSTALLATION PROBLEMS
 I suggest that you ignore these packages when installing the blackarch-reversing group. I could not find any mirrors to download these from.
 
 1.radare2-keystone
-
 2.radare2-unicorn
 
 
