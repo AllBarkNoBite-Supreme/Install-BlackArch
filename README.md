@@ -343,4 +343,9 @@ Another short rant... Forcibly removing conflicting packages is not a crime unle
 https://github.com/juanbelin/How-to-install-BlackArch-in-USB-with-persistance
 
 
+### Packages causing installation errror
+1.radare2-keystone
+2.radare-unicorn
+
+
 
