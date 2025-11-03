@@ -77,58 +77,9 @@ Make sure the *community* header is commented out as follows
 #Include = /etc/pacman.d/mirrorlist
 ```
 
-
 *The hashtag makes it a comment.
-Press `CTRL # HOW TO INSTALL BLACKARCH
 
-
-### INSTALLING BLACKARCH USING THE SLIM OS ISO FILE
-
-
-## REQUIREMENTS
-
-**Stable** *Internet Connection*
-
-**2 Drives**. *One 8GB minimum. Second 200GB minimum*
-
-## PURPOSE
-
-
-During my install I found that there was very little support; *atleast in text form*, for anyone wanting to switch
-to blackarch linux. Troubleshooting the problems with the install itself can be somewhat of a nightmare if you
-are not methodological about how you approach the so72058-1 is up to date -- reinstalling
-warning: jeb-arm-5.20.0.202411121942-1 is up to date -- reinstalling
-warning: jeb-intel-1:3.7.0.201909272058-1 is up to date -- reinstalling
-warning: jeb-mips-1:5.20.0.202411121942-1 is up to date -- reinstalling
-warning: jeb-webasm-3.7.0.201909272058-1 is up to date -- reinstalling
-warning: jefferson-v0.4.6.r0.g9e33796-1 is up to date -- reinstalling
-warning: jsparser-31.ccd3ab6-5 is up to date -- reinstalling
-warning: justdecompile-22018-2 is up to date -- reinstalling
-warning: jwscan-7.874b3a5-2 is up to date -- reinstalling
-warning: klee-2.1-2 is up to datelve. I've documented the steps that I followed (*atleast the 
-steps that will lead to a meaningful outcome*) to obtain a fully functional blackarch driven system. 
-
-## CREATING A BOOTABLE DRIVE
-
-
-You must have the blackarch SLIM ISO downloaded, if not, you can get it from this [direct download link](https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-slim-2023.05.01-x86_64.iso)
-
-To create a bootable drive, you can use **a)** *dd in the linux shell* or **b)** *balena etcher: a GUI available on all 
-major platforms.*
-
-To flash the ISO to your USB stick run this command (using dd):
-`dd if=/path/to/image.iso of=/dev/sdX status=progress oflag=sync bs=16M` where X is replaced by the letter that
-suffixes your desired drive, and bs(buffer size) is set to 16MB instead of the *ridiculous* 512B. Wait for the 
-program to finish and eject your drive.
-
-The usage of [balena etcher](https://etcher.balena.io/#download-etcher) is very straight forward, it will automatically detect available drives and also prompt you
-for the location of you ISO image. 
-
-**RUFUS** may also be used, but do so in dd mode and also note *it is considerably slower than balena etcher for 
-this particular ISO.* I do not understand why.
-
-## BOOTING INTO THE USB
-+ X` to exit. Make sure to *save* the changes as this is **very important**
+Press CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
 
 The next thing we have to do is set the system time. We can do this by running the `timedatectl` command.
 Enter the appropriate time in this format: `sudo timedatectl set-time "2025-12-25 12:12:20"`. This is *important*
