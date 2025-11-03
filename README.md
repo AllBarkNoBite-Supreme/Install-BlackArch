@@ -79,7 +79,7 @@ Make sure the *community* header is commented out as follows
 
 *The hashtag makes it a comment.
 
-Press CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
+Press `CTRL + X` to exit. Make sure to *save* the changes as this is **very important**
 
 The next thing we have to do is set the system time. We can do this by running the `timedatectl` command.
 Enter the appropriate time in this format: `sudo timedatectl set-time "2025-12-25 12:12:20"`. This is *important*
